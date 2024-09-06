@@ -1,0 +1,90 @@
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #fff; 
+    color: #000; 
+    border: none; 
+    text-align: center; 
+    padding: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px; 
+}
+
+.card h2 {
+    font-size: 12px; 
+    font-weight: 500;
+    color: #000; 
+    margin: 5px 0;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.card h3 {
+    font-size: 10px; 
+    color: #555; 
+    margin: 6px 0;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 8px; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.feed.light .card {
+    background-color: #fff; 
+    color: #000; 
+}
+
+.feed.light .card h2 {
+    color: #000; 
+}
+
+.feed.light .card h3 {
+    color: #555; 
+}
+
+.feed.light .card p {
+    color: #000; 
+}
+
+.feed.dark .card {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.feed.dark .card h2 {
+    color: #fff; 
+}
+
+.feed.dark .card h3 {
+    color: #ccc; 
+}
+
+.feed.dark .card p {
+    color: #fff; 
+}
+
+
+@media (max-width: 900px) {
+    .feed {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-column-gap: 12px;
+        grid-row-gap: 20px;
+    }
+}

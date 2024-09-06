@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+/* Global styles (e.g., styles.css or a global CSS file) */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Button styles for the toggle button */
+  .theme-toggle {
+    padding: 5px 10px;
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #ff6347; /* Slightly darker tomato */
+  }
+  

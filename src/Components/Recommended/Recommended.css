@@ -1,0 +1,54 @@
+.recommended {
+    flex-basis: 30%;
+    padding: 0 5px; 
+    box-sizing: border-box; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.recommended.light {
+    color: #000;
+    background-color: #fff;
+}
+
+.recommended.dark {
+    color: white;
+    background-color: #121212;
+}
+
+.side-video-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 5px 0; 
+}
+
+.side-video-list img {
+    flex-basis: 49%;
+    width: 50%;
+    border-radius: 4px; 
+}
+
+.vide-info {
+    flex-basis: 45%;
+}
+
+.vide-info h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.vide-info p {
+    font-size: 12px; 
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+    .recommended {
+        flex-basis: 100%;
+    }
+}
